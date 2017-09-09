@@ -11,6 +11,7 @@ execute_process(
   RESULT_VARIABLE result
   WORKING_DIRECTORY ${CMAKE_BINARY_DIR}/googletest-download
 )
+set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
 add_subdirectory(
   ${CMAKE_BINARY_DIR}/googletest-src
   ${CMAKE_BINARY_DIR}/googletest-build

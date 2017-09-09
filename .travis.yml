@@ -1,3 +1,3 @@
 language: cpp
 script:
-  - mkdir build && cd build && cmake .. && make && ctest -V
+  - mkdir build && cd build && cmake .. && cmake --build . && ctest -V -C Debug
