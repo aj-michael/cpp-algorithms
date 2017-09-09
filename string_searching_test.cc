@@ -23,9 +23,3 @@ TEST(KmpTest, NoMatch) {
 TEST(KmpPrefixTableTest, CLSRExample) {
   ASSERT_THAT(kmp_prefix_table("ababaca"), ElementsAre(0, 0, 1, 2, 3, 0, 1));
 }
-
-/**
-TEST(KmpPrefixTableTest, WikipediaExample) {
-  ASSERT_THAT(kmp_prefix_table("abcdabd"), ElementsAre(-1, 0, 0, 0, -1, 0, 2));
-}
-*/
