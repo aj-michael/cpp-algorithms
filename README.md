@@ -3,5 +3,5 @@
 Instructions to build and run the tests:
 
 ```
-build && cd build && cmake .. && cmake --build . && ctest -V -C Debug
+mkdir build && cd build && cmake .. && cmake --build . && ctest -V -C Debug
 ```

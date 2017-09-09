@@ -20,6 +20,10 @@ TEST(KmpTest, NoMatch) {
   ASSERT_THAT(kmp("abc", "cb"), IsEmpty());
 }
 
+TEST(KmpTest, AllMatches) {
+  ASSERT_THAT(kmp("aaaaaa", "aaa"), ElementsAre(0, 1, 2, 3));
+}
+
 TEST(KmpPrefixTableTest, CLSRExample) {
   ASSERT_THAT(kmp_prefix_table("ababaca"), ElementsAre(0, 0, 1, 2, 3, 0, 1));
 }
